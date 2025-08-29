@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Rectangle Area Calculator & Grocery Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rectangle Area Calculator</h1>
+    <input id="length" type="number" placeholder="Length"><br>
+    <input id="width" type="number" placeholder="Width"><br>
+    <button onclick="calculateArea()">Calculate Area</button>
+    <div id="result"></div>
+    <hr>
+    <h1>Grocery Tracker</h1>
+    <label for="grocery1">Enter first grocery amount:</label>
+    <input id="grocery1" type="number" placeholder="Amount"><br>
+    <label for="grocery2">Enter second grocery amount:</label>
+    <input id="grocery2" type="number" placeholder="Amount"><br>
+    <label for="grocery3">Enter third grocery amount:</label>
+    <input id="grocery3" type="number" placeholder="Amount"><br>
+    <button onclick="groceryTracker()">Calculate Total Grocery Amount</button>
+    <div id="groceryResult"></div>
+  </div>
+  <script src="./calculate_Area.js"></script>
+</body>
+</html>

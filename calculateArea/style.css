@@ -1,0 +1,77 @@
+body {
+    background: #f0f4f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #fff;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+}
+
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: #34495e;
+    font-size: 15px;
+}
+
+button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background: #3498db;
+}
+
+#result, #groceryResult {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #27ae60;
+    text-align: center;
+    min-height: 24px;
+}
+
+hr {
+    margin: 32px 0;
+    border: none;
+    border-top: 1px solid #e1e4e8;
+}
