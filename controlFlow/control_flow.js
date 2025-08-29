@@ -44,3 +44,33 @@ switch (userType) {
         userCategory = "Unknown";
 }
 console.log("User Category:", userCategory);
+
+// Use ternary operator for isAuth
+let isAuthenticated = true;
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+console.log("Authentication Status:", authenticationStatus);
+
+// Authorization logic for Dietary Services
+let personRole = "Enrolled Member"; // Change this value to test different roles
+let eligibilityMessage;
+
+switch (personRole) {
+    case "Employee":
+        eligibilityMessage = "You are authorized to access Dietary Services.";
+        break;
+    case "Enrolled Member":
+        eligibilityMessage = "You are authorized to access Dietary Services and one-on-one interaction with a dietician.";
+        break;
+    case "Subscriber":
+        eligibilityMessage = "You are authorized to have partial access to Dietary Services.";
+        break;
+    case "Non-Subscriber":
+        eligibilityMessage = "Please enroll or subscribe first to avail Dietary Services.";
+        break;
+    default:
+        eligibilityMessage = "Role not recognized. Please contact support.";
+}
+
+console.log("Eligibility:", eligibilityMessage);
